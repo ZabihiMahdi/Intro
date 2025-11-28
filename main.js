@@ -3,24 +3,24 @@ const root = document.getElementById("root");
 
 root.innerHTML = `
   <div class="container">
-    <h1>انجمن علمی دانشگاه مازندران</h1>
+    <h1>مجمع علمی دانشگاه مازندران</h1>
 
     <!-- بخش ۱: شورای مرکزی -->
     <div class="accordion-item">
       <button class="accordion-header">
-        <span>شورای مرکزی انجمن علمی</span>
+        <span>شورای اجرایی مجمع</span>
         <div class="accordion-icon">›</div>
       </button>
       <div class="accordion-body">
         <div class="inner-scroll">
           <ul class="members">
             <li>
-              <strong>دکتر عنایتی</strong> – معاونت پژوهشی انجمن‌های علمی دانشگاه مازندران<br>
+              <strong>دکتر محمد عنایتی</strong> – کارشناس انجمن های علمی دانشگاه مازندران<br>
               آیدی تلگرام:
               <a href="https://t.me/Za0zaaaa" target="_blank">@Za0zaaaa</a>
             </li>
             <li>
-              <strong>مهدیه عابد</strong> – دبیر دبیران<br>
+              <strong>مهدیه عابد</strong> – دبیر انجمن علمی <br>
               آیدی تلگرام:
               <a href="https://t.me/Mhdieabed" target="_blank">@Mhdieabed</a>
             </li>
@@ -52,7 +52,7 @@ root.innerHTML = `
             <li>
               <strong>امیرحسین قنبرزاده</strong> – دبیر انجمن علمی جامعه‌شناسی<br>
               آیدی تلگرام:
-              <a href="https://t.me/@Amir_ho3yngh" target="_blank">@Amir_ho3yngh</a>
+              <a href="https://t.me/@Amirho3yn_gh" target="_blank">@Amirho3yn_gh</a>
             </li>
             <li>
               <strong>محمد مهدی زاهدی</strong> – دبیر انجمن علمی مهندسی شهرسازی<br>
@@ -138,4 +138,5 @@ window.addEventListener("load", () => {
     loadingBg.remove();
   }, 500);
 });
+
 
