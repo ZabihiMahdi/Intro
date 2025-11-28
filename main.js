@@ -3,7 +3,7 @@ const root = document.getElementById("root");
 
 root.innerHTML = `
   <div class="container">
-    <h1>مجمع علمی دانشگاه مازندران</h1>
+    <h1>مجمع دبیران انجمن های علمی دانشگاه مازندران</h1>
 
     <!-- بخش ۱: شورای مرکزی -->
     <div class="accordion-item">
@@ -15,50 +15,74 @@ root.innerHTML = `
         <div class="inner-scroll">
           <ul class="members">
             <li>
-              <strong>دکتر محمد عنایتی</strong> – کارشناس انجمن های علمی دانشگاه مازندران<br>
+              <strong>دکتر محمد عنایتی</strong>
+              <span class="main-role-pill">کارشناس انجمن‌های علمی دانشگاه مازندران</span><br>
               آیدی تلگرام:
               <a href="https://t.me/Za0zaaaa" target="_blank">@Za0zaaaa</a>
             </li>
+
             <li>
-              <strong>مهدیه عابد</strong> – دبیر انجمن علمی <br>
+              <strong>مهدیه عابد</strong>
+              <span class="role-text">دبیر انجمن علمی مغز و شناخت</span>
+              <span class="main-role-pill">دبیر دبیران</span><br>
               آیدی تلگرام:
               <a href="https://t.me/Mhdieabed" target="_blank">@Mhdieabed</a>
             </li>
+
             <li>
-              <strong>مهدی ذبیحی</strong> – دبیر انجمن علمی مهندسی کامپیوتر<br>
-              آیدی تلگرام:
-              <a href="https://t.me/Zabihi_Mahdi" target="_blank">@Zabihi_Mahdi</a>
-            </li>
-            <li>
-              <strong>عادل لعلی</strong> – دبیر انجمن علمی روابط بین‌الملل و مطالعات منطقه‌ای<br>
+              <strong>عادل لعلی</strong>
+              <span class="role-text">دبیر انجمن علمی روابط بین‌الملل و مطالعات منطقه‌ای</span>
+              <span class="main-role-pill">بازرس انجمن‌های علمی </span><br>
               آیدی تلگرام:
               <a href="https://t.me/Adel_Laali" target="_blank">@Adel_Laali</a>
             </li>
+
             <li>
-              <strong>مبینا ابوالفضلیان</strong> – دبیر انجمن علمی کارآفرینی<br>
+              <strong>مهدی ذبیحی</strong>
+              <span class="role-text">دبیر انجمن علمی مهندسی کامپیوتر</span>
+              <span class="role-pill">مسئول کمیته علمی و پژوهشی</span><br>
+              آیدی تلگرام:
+              <a href="https://t.me/Zabihi_Mahdi" target="_blank">@Zabihi_Mahdi</a>
+            </li>
+
+            <li>
+              <strong>مبینا ابوالفضلیان</strong>
+              <span class="role-text">دبیر انجمن علمی کارآفرینی</span>
+              <span class="role-pill">مسئول کمیته توسعه و ارتباطات</span><br>
               آیدی تلگرام:
               <a href="https://t.me/Mobinaabolfazlian" target="_blank">@Mobinaabolfazlian</a>
             </li>
+
             <li>
-              <strong>بهرام مداح</strong> – دبیر انجمن علمی حسابداری<br>
+              <strong>بهرام مداح</strong>
+              <span class="role-text">دبیر انجمن علمی حسابداری</span>
+              <span class="role-pill">مسئول کمیته اجرایی</span><br>
               آیدی تلگرام:
               <a href="https://t.me/Bahram_maddah" target="_blank">@Bahram_maddah</a>
             </li>
+
             <li>
-              <strong>فاطمه خسروی</strong> – دبیر انجمن علمی مردم‌شناسی<br>
+              <strong>فاطمه خسروی</strong>
+              <span class="role-text">دبیر انجمن علمی مردم‌شناسی</span>
+              <span class="role-pill">مسئول روابط عمومی</span><br>
               آیدی تلگرام:
               <a href="https://t.me/Wavemmm" target="_blank">@Wavemmm</a>
             </li>
+
             <li>
-              <strong>امیرحسین قنبرزاده</strong> – دبیر انجمن علمی جامعه‌شناسی<br>
+              <strong>امیرحسین قنبرزاده</strong>
+              <span class="role-text">دبیر انجمن علمی جامعه‌شناسی</span><br>
               آیدی تلگرام:
               <a href="https://t.me/@Amirho3yn_gh" target="_blank">@Amirho3yn_gh</a>
             </li>
+
             <li>
-              <strong>محمد مهدی زاهدی</strong> – دبیر انجمن علمی مهندسی شهرسازی<br>
+              <strong>محمد مهدی زاهدی</strong>
+              <span class="role-text">دبیر انجمن علمی مهندسی شهرسازی</span><br>
               آیدی تلگرام:
               <a href="https://t.me/MhmdMHDI75" target="_blank">@MhmdMHDI75</a>
             </li>
+            
           </ul>
         </div>
       </div>
@@ -138,5 +162,3 @@ window.addEventListener("load", () => {
     loadingBg.remove();
   }, 500);
 });
-
-
