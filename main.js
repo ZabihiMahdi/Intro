@@ -51,7 +51,8 @@ root.innerHTML = `
             </li>
             <li>
               <strong>امیرحسین قنبرزاده</strong> – دبیر انجمن علمی جامعه‌شناسی<br>
-              آیدی تلگرام: —
+              آیدی تلگرام:
+              <a href="https://t.me/@Amir_ho3yngh" target="_blank">@Amir_ho3yngh</a>
             </li>
             <li>
               <strong>محمد مهدی زاهدی</strong> – دبیر انجمن علمی مهندسی شهرسازی<br>
@@ -137,3 +138,4 @@ window.addEventListener("load", () => {
     loadingBg.remove();
   }, 500);
 });
+
