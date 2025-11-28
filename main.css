@@ -1,0 +1,299 @@
+@import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css");
+
+/* ریست ساده */
+* {
+  box-sizing: border-box;
+}
+
+/* بک‌گراند شیک + فونت */
+body {
+  margin: 0;
+  font-family: "Vazirmatn", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  direction: rtl;
+  color: #e3f2fd; /* متن پیش‌فرض روشن */
+
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(129, 212, 250, 0.35), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(171, 71, 188, 0.28), transparent 55%),
+    radial-gradient(circle at 100% 0%, rgba(120, 144, 156, 0.25), transparent 55%),
+    linear-gradient(135deg, #0f172a, #111827);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* لایه نُویز خیلی ملایم */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("https://svgshare.com/i/14tC.svg");
+  opacity: 0.12;
+  mix-blend-mode: soft-light;
+  z-index: -1;
+}
+
+/* پس‌زمینه لودینگ */
+#loading-bg {
+  background: #111;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* دایره لودینگ ساده */
+#loading-spinner {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 4px solid #424242;
+  border-top-color: #90caf9;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ظرف اصلی */
+.container {
+  max-width: 720px;
+  margin: 56px auto;
+  padding: 0 16px;
+}
+
+/* عنوان صفحه */
+h1 {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #e3f2fd;
+}
+
+/* کارت آکاردئون با حس شیشه‌ای */
+.accordion-item {
+  background-color: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(129, 212, 250, 0.18);
+  overflow: hidden;
+}
+
+/* هدر آکاردئون */
+.accordion-header {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(25, 118, 210, 0.95), rgba(21, 101, 192, 0.98));
+  color: #fff;
+  border: none;
+  text-align: right;
+  padding: 14px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* متن هدر (span) با فونت نرم‌تر */
+.accordion-header span {
+  font-family: "Vazirmatn", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0;
+}
+
+/* آیکن فلش */
+.accordion-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transform: rotate(0deg);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  background-color: rgba(21, 101, 192, 0.4);
+}
+
+/* بدنه آکاردئون با انیمیشن ارتفاع کلی */
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgba(15, 23, 42, 0.9);
+  padding: 0 18px;
+  transition: max-height 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
+}
+
+/* ظرف داخلی برای اسکرول محتوای هر بخش */
+.inner-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+/* برای بخش دوم هم همان ارتفاع */
+.details-scroll {
+  max-height: 400px;
+}
+
+/* وقتی باز است */
+.accordion-item.open .accordion-body {
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+
+/* متن‌ها و لیست‌ها داخل بدنه */
+.accordion-body p {
+  margin: 4px 0;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.accordion-body h2 {
+  font-size: 15px;
+  margin: 10px 0 4px;
+  color: #90caf9;
+}
+
+.accordion-body ul {
+  padding-right: 18px;
+  margin: 4px 0 0;
+}
+
+/* لیست اعضا */
+.members {
+  list-style: none;
+  padding-right: 0;
+  margin: 8px 0 0;
+}
+
+.members li {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background-color: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(129, 212, 250, 0.16);
+  color: #ffffff;
+}
+
+.members strong {
+  color: #bbdefb;
+}
+
+/* لینک‌ها */
+a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* وقتی باز است، فلش بچرخد و پس‌زمینه‌اش پررنگ‌تر شود */
+.accordion-item.open .accordion-icon {
+  transform: rotate(90deg);
+  background-color: rgba(21, 101, 192, 0.9);
+}
+
+/* اسکرول‌بار زیباتر برای محتوای داخلی */
+.inner-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.inner-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 999px;
+}
+
+.inner-scroll::-webkit-scrollbar-thumb {
+  background: #607d8b;
+  border-radius: 999px;
+}
+
+.inner-scroll::-webkit-scrollbar-thumb:hover {
+  background: #78909c;
+}
+
+/* کلاس‌های امضا (شبیه Tailwind) */
+.z-50 {
+  z-index: 50;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.left-2 {
+  left: 0.5rem; /* حدود 8px */
+}
+
+.bottom-1 {
+  bottom: 0.25rem; /* حدود 4px */
+}
+
+.text-\[11px\] {
+  font-size: 11px;
+}
+
+/* استایل اختصاصی امضا */
+.signature {
+  color: #90caf9;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 600px) {
+  .container {
+    margin: 32px auto;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .accordion-header {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .accordion-header span {
+    font-size: 16px;
+  }
+
+  .accordion-body {
+    padding: 0 14px;
+  }
+
+  .accordion-item.open .accordion-body {
+    padding-top: 10px;
+    padding-bottom: 12px;
+  }
+
+  .members li {
+    font-size: 14px;
+  }
+
+  .inner-scroll {
+    max-height: 320px;
+  }
+
+  .details-scroll {
+    max-height: 320px;
+  }
+}
